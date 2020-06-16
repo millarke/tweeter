@@ -43,6 +43,19 @@
         <div>
           Lorem Ipsum is the single greatest threat. We are not - we are not keeping up with other websites. Lorem Ipsum best not make any more threats to your website. It will be met with fire and fury like the world has never seen. Does everybody know that pig named Lorem Ipsum? An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud.
         </div>
+        <div>
+          <section class="new-tweet">
+            <h2>Compose Tweet</h2>
+            <form action="/tweets" method="POST">
+              <label for="tweet-text"></label>
+              <textarea name="text" placeholder="What are you humming about?" id="tweet-text"></textarea>
+              <div>
+                <button type="submit">Tweet</button>
+                <output name="counter" class="counter" for="tweet-text">140</output>
+              </div>
+            </form>
+          </section>
+        </div>
       </main>
     </body>
 </html>
