@@ -1,0 +1,32 @@
+.new-tweet {
+
+}
+
+.new-tweet-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-tweet button {
+  background-color: teal;
+  color: white;
+  border: 0px;
+  padding: 4px 8px 4px 8px ;
+}
+
+#tweet-text {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 5px solid darkslategrey;
+  margin-bottom: 1em;
+  font-family: 'Source Sans Pro', sans-serif;
+  resize:none;
+}
+
+.submit-counter {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', sans-serif;
+
+}

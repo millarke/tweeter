@@ -30,10 +30,11 @@ body {
  }
 
  .container {
-   /* display: flex; */
+   display: flex;
    width: 90%;
    margin-left: 5%;
-   /* justify-content: center; */
+   justify-content: center;
+   flex-direction: column;
    /* margin: auto */
    /* align-items: center; */
   }
