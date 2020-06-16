@@ -1,0 +1,20 @@
+header {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: center;
+  background-color: #001209;
+  background-image: url("https://www.transparenttextures.com/patterns/light-toast.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  height: 400px;
+  /* width: 100pc; */
+}
+
+.profile-pic {
+  padding-top: 1.5em;
+}
+
+.profile-name {
+  margin-top: -0.5em;
+  color: darkorange;
+}
