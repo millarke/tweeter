@@ -28,3 +28,12 @@ body {
  .logo {
   font-family: 'Bungee', sans-serif;
  }
+
+ .container {
+   /* display: flex; */
+   width: 90%;
+   margin-left: 5%;
+   /* justify-content: center; */
+   /* margin: auto */
+   /* align-items: center; */
+  }
