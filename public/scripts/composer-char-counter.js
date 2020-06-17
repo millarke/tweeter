@@ -22,7 +22,7 @@ $(document).ready(function() {
     counter.val() <= 0 ? counter.css('color', 'red') : counter.css('color', '#545149');
   });
 
-// .css jqueary can add new html to a property add new html
+  // .css jqueary can add new html to a property add new html
 
 
   // // need to detect keypresses
