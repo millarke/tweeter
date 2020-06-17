@@ -3,6 +3,10 @@
   height: 120px;
   background-color: #4056A1;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  /* top: 0px; */
+
 }
 
 .nav-text {
