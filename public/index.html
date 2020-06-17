@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet-container.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -21,14 +23,12 @@
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
-
   </head>
 
 
   <body>
 
-    <!-- navbar used to be here... don't forget -->
-          <!-- Top nav bar (fixed) -->
+    <!-- Top nav bar (fixed) -->
     <nav class="navbar">
       <span class="logo nav-text">tweeter</span>
       <span class="nav-text"><strong style="padding-right: 8px";
@@ -36,7 +36,7 @@
     </nav>
 
 
-    <header>
+    <header class="page-header">
       <div>
           <img class="profile-pic" src="/images/profile-hex.png"> 
       </div>
@@ -47,32 +47,40 @@
     </header>
 
     <!-- Page-specific (main) content here -->
-      <main class="container">
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-        <div>
-          <section class="new-tweet">
-            <h2 class='test'>Compose Tweet</h2>
-            <form class="new-tweet-form" action="/tweets" method="POST">
-              <label for="tweet-text"></label>
-              <textarea name="text" placeholder="What are you humming about?" id="tweet-text"></textarea>
-              <div class="submit-counter">
-                <button type="submit">Tweet</button>
-                <output name="counter" class="counter" for="tweet-text">140</output>
-              </div>
-            </form>
-          </section>
-        </div>
-      </main>
-    </body>
+    <main class="container">
+      <div>
+        <section class="new-tweet">
+          <h2 class='test'>Compose Tweet</h2>
+          <form class="new-tweet-form" action="/tweets" method="POST">
+            <label for="tweet-text"></label>
+            <textarea name="text" placeholder="What are you humming about?" id="tweet-text"></textarea>
+            <div class="submit-counter">
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+      </div>
+      <article class="tweet-container">
+        <header class="tweet-header">
+          <div>
+            <img src="https://i.imgur.com/73hZDYK.png" alt="https://i.imgur.com/5fUVPRP.png">
+            <h3>Newton</h3>
+          </div>
+          <span class="handle">@SirIsaac</span>
+        </header>
+          <p>If I have seen further it is by standing on the shoulders of giants</p>
+          <hr>
+        <footer class="tweet-footer">
+          <p>10 days ago</p>
+          <span class="action-icons">
+            <i class="fa fa-flag" aria-hidden="true"></i>
+            <i class="fa fa-retweet" aria-hidden="true"></i>
+            <i class="fa fa-heart" aria-hidden="true"></i>
+          </span>
+
+        </footer>
+      </article>
+    </main>
+  </body>
 </html>
