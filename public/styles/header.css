@@ -6,8 +6,10 @@ header {
   background-color: #001209;
   background-image: url("https://www.transparenttextures.com/patterns/light-toast.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  height: 400px;
+  height: 520px;
   /* width: 100pc; */
+  /* margin-top: 120px; */
+  padding-top: 120px;
 }
 
 .profile-pic {
