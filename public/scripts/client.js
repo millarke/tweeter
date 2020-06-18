@@ -33,14 +33,10 @@ const data = [
 const renderTweets = function(tweets) {
   for (let tweet of tweets) {
     $('.tweets-list').prepend(createTweetElement(tweet));
-    // $('.tweets-list').append(createTweetElement(tweet));
   }
 };
 
 const createTweetElement = function(tweet) {
-  // let d = new Date()
-  // let datePosted = tweet.created_at - d.getTime();
-
   let $tweet = `
   <article class="tweet-container">
     <header class="tweet-header">
@@ -90,13 +86,18 @@ $(document).ready(function() {
     const textLength = $('#tweet-text').val().length;
 
     if (textLength > 140) {
-      window.alert("Tweet too long! It's a tweet not a tweeeeet!");
+      // $('.error').css("display", "block");ß
+      $('.error').text("Tweet too long! It's a tweet not a tweeeeet!").slideDown(1000);
+
+      // window.alert("Tweet too long! It's a tweet not a tweeeeet!");
     } else if (textLength <= 0 || textLength === null) {
       window.alert("You need a tweet first before you can tweet something!");
     } else {
       $.post('/tweets', $('.new-tweet-form').serialize())
         .then(function(response) {
           $('#tweet-text').val('');
+          $('.counter').val(140).css('color', '#545149');
+          // $('.counter').val(140).removeClass
           fetchTweets();
         });
     }
