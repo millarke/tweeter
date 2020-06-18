@@ -86,10 +86,22 @@ $(document).ready(function() {
 
   $('.new-tweet-form').on('submit', (event) => {
     event.preventDefault();
-    $.post('/tweets', $('.new-tweet-form').serialize())
-      .then(function(response) {
-        fetchTweets();
+
+    const textLength = $('#tweet-text').val().length;
+
+    if (textLength > 140 || textLength <= 0 || textLength === null) {
+      console.log("error");
+      window.alert("error!");
+      // `<script>$alert("error!")</script>`;
+      // $.alert("error!2");
+      // return `<script>$alert("error!")</script>`;
+    } else {
+      $.post('/tweets', $('.new-tweet-form').serialize())
+        .then(function(response) {
+          fetchTweets();
         // $('#tweet-text').empty();
-      });
+        });
+    }
+      // alert("this is error")
   });
 });
