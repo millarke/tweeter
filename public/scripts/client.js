@@ -89,8 +89,10 @@ $(document).ready(function() {
 
     const textLength = $('#tweet-text').val().length;
 
-    if (textLength > 140 || textLength <= 0 || textLength === null) {
-      window.alert("error!");
+    if (textLength > 140) {
+      window.alert("Tweet too long! It's a tweet not a tweeeeet!");
+    } else if (textLength <= 0 || textLength === null) {
+      window.alert("You need a tweet first before you can tweet something!");
     } else {
       $.post('/tweets', $('.new-tweet-form').serialize())
         .then(function(response) {
