@@ -32,7 +32,8 @@ const data = [
 
 const renderTweets = function(tweets) {
   for (let tweet of tweets) {
-    $('.tweets-list').append(createTweetElement(tweet));
+    $('.tweets-list').prepend(createTweetElement(tweet));
+    // $('.tweets-list').append(createTweetElement(tweet));
   }
 };
 
@@ -49,7 +50,7 @@ const createTweetElement = function(tweet) {
       </div>
       <span class="handle">${tweet.user.handle}</span>
     </header>
-      <p>${tweet.content.text}</p>
+      <p>${escape(tweet.content.text)}</p>
       <hr>
     <footer class="tweet-footer">
       <p>${tweet.created_at}</p>
@@ -64,6 +65,31 @@ const createTweetElement = function(tweet) {
   return $tweet;
 };
 
+const fetchTweets = function() {
+  $.ajax({
+    url: `/tweets`,
+    method: 'GET'
+  }).then(function(response) {
+    $('.tweets-list').empty();
+    renderTweets(response);
+  });
+};
+
+const escape =  function(str) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 $(document).ready(function() {
-  renderTweets(data);
+  fetchTweets();
+
+  $('.new-tweet-form').on('submit', (event) => {
+    event.preventDefault();
+    $.post('/tweets', $('.new-tweet-form').serialize())
+      .then(function(response) {
+        fetchTweets();
+        // $('#tweet-text').empty();
+      });
+  });
 });
