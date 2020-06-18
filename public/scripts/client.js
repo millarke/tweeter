@@ -90,20 +90,13 @@ $(document).ready(function() {
     const textLength = $('#tweet-text').val().length;
 
     if (textLength > 140 || textLength <= 0 || textLength === null) {
-      // console.log("error");
       window.alert("error!");
-      // `<script>$alert("error!")</script>`;
-      // $.alert("error!2");
-      // return `<script>$alert("error!")</script>`;
     } else {
       $.post('/tweets', $('.new-tweet-form').serialize())
         .then(function(response) {
-          // $('.new-tweet-form').empty();
           $('#tweet-text').val('');
           fetchTweets();
-        // $('#tweet-text').empty();
         });
     }
-    // alert("this is error")
   });
 });
