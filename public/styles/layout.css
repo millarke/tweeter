@@ -21,8 +21,6 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-
-
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
@@ -37,44 +35,23 @@ body {
    margin-left: 5%;
    justify-content: center;
    flex-direction: column;
-   /* margin: auto */
-   /* align-items: center; */
   }
 
-
-/* Laptops / Desktops: minimum width of 1024px */
 @media only screen and (min-width: 1024px) {
-  /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
- 
 
   .page-header {
     float: left;
     margin-left: 2em;
-    /* padding: 1em; */
-    /* height: 640px; */
-    /* min-height: 100%; */
-    /* height: -webkit-fill-available;
-    position: fixed; */
   }
-
-  /* .profile-pic {
-    padding: 1em;
-  } */
 
   .navbar {
     position: fixed;
-    /* color: darkcyan; */
     width: -webkit-fill-available;
     background-color: cadetblue;
   }
 
-  /* .logo {
-    color: cadetblue;
-  } */
-
   .nav-text {
     color: #FFFFFF;
-
   }
 
   .container {

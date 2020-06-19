@@ -8,11 +8,6 @@
   border-radius: 3px;
 }
 
-
-.new-tweet {
-
-}
-
 .new-tweet-form {
   display: flex;
   flex-direction: column;

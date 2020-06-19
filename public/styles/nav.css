@@ -1,7 +1,6 @@
 .navbar {
   display: flex;
   height: 120px;
-  /* background-color: cadetblue; */
   justify-content: space-between;
   position: fixed;
   width: 100%;
@@ -9,8 +8,6 @@
 
 .nav-text {
   display: flex;
-  /* color: cadetblue; */
   margin: 1.5em;
   align-items: center;
-  /* color: blueviolet; */
 }
