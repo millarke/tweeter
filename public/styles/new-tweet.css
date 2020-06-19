@@ -1,7 +1,11 @@
 .error {
   color: red;
   display: none;
-
+  border: red;
+  border-style: solid;
+  border-width: 2px;
+  padding: 4px;
+  border-radius: 3px;
 }
 
 

@@ -1,19 +1,16 @@
 .navbar {
   display: flex;
   height: 120px;
-  /* background-color: #4056A1; */
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  /* top: 0px; */
-  /* top: -120px; */
-
 }
 
 .nav-text {
   display: flex;
-  color: #FFFFFF;
+  /* color: cadetblue; */
   margin: 1.5em;
   align-items: center;
+  /* color: blueviolet; */
 }

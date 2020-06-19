@@ -21,6 +21,8 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
@@ -61,8 +63,18 @@ body {
 
   .navbar {
     position: fixed;
-    color: darkcyan;
+    /* color: darkcyan; */
     width: -webkit-fill-available;
+    background-color: cadetblue;
+  }
+
+  /* .logo {
+    color: cadetblue;
+  } */
+
+  .nav-text {
+    color: #FFFFFF;
+
   }
 
   .container {

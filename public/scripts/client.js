@@ -99,6 +99,7 @@ $(document).ready(function() {
         .then(function(response) {
           $('#tweet-text').val('');
           $('.counter').val(140).css('color', '#545149');
+          $('.error').slideUp(1000);
           // $('.counter').val(140).removeClass
           fetchTweets();
         });
