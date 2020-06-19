@@ -3,7 +3,11 @@
 Tweeter is a simple, single-page Twitter clone.
 
 !["screenshot of desktop style"](https://github.com/millarke/tweeter/blob/master/docs/desktop-screenshot.png?raw=true)
+
+
 !["error message when tweet is too long"](https://github.com/millarke/tweeter/blob/master/docs/error.png?raw=true)
+
+
 !["mobile page styling"](https://github.com/millarke/tweeter/blob/master/docs/mobile-tablet-screenshot.png?raw=true)
 
 ## Getting Started
