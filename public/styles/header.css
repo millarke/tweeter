@@ -26,7 +26,12 @@
   margin-top: -0.5em;
   color: rgb(51, 51, 51);
   /* font-family: Bungee; */
-  font-family: 'Bungee', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+.profile-name-last {
+  font-weight: 700;
 }
 
 
