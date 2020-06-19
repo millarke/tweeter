@@ -54,17 +54,7 @@ hr {
   opacity: 0.2;
 }
 
-.fa-flag:hover {
-  opacity: 1;
-  color: lightcoral;
-}
-
-.fa-retweet:hover {
-  opacity: 1;
-  color: lightcoral;
-}
-
-.fa-heart:hover {
+.fa-flag:hover, .fa-retweet:hover, .fa-heart:hover {
   opacity: 1;
   color: lightcoral;
 }
