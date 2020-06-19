@@ -49,7 +49,7 @@ const createTweetElement = function(tweet) {
       <p class="word-wrap">${escape(tweet.content.text)}</p>
       <hr>
     <footer class="tweet-footer">
-      <p>${tweet.created_at}</p>
+      <p>${Math.round(((Date.now() - tweet.created_at) / 1000 / 60 / 60 / 24) * 10) / 10} Days Ago</p>
       <span class="action-icons">
         <i class="fa fa-flag" aria-hidden="true"></i>
         <i class="fa fa-retweet" aria-hidden="true"></i>
