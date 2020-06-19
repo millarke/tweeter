@@ -48,6 +48,7 @@ body {
   .page-header {
     float: left;
     margin-left: 2em;
+    /* padding: 1em; */
     /* height: 640px; */
     /* min-height: 100%; */
     /* height: -webkit-fill-available;
@@ -55,7 +56,7 @@ body {
   }
 
   /* .profile-pic {
-    size: 7%;
+    padding: 1em;
   } */
 
   .navbar {
