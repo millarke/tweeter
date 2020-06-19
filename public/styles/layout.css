@@ -43,16 +43,32 @@ body {
 /* Laptops / Desktops: minimum width of 1024px */
 @media only screen and (min-width: 1024px) {
   /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
-  header {
+ 
+
+  .page-header {
     float: left;
-    min-height: 100%;
+    margin-left: 2em;
+    /* height: 640px; */
+    /* min-height: 100%; */
+    /* height: -webkit-fill-available;
+    position: fixed; */
+  }
+
+  /* .profile-pic {
+    size: 7%;
+  } */
+
+  .navbar {
+    position: fixed;
+    color: darkcyan;
+    width: -webkit-fill-available;
   }
 
   .container {
     float: right;
     max-width: 60%;
     margin-top: 130px;
-    margin-right: 3em;
+    margin-right: 2em;
   }
 
   .tweet-container {
