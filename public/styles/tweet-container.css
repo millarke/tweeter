@@ -58,3 +58,11 @@ hr {
   opacity: 1;
   color: lightcoral;
 }
+
+.date-posted {
+  opacity: 0.2;
+}
+
+.tweet-container:hover .date-posted {
+  opacity: 1;
+}
