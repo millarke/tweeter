@@ -3,7 +3,8 @@
   flex-direction: column;
   /* justify-content: flex-start; */
   align-items: center;
-  background-color: #001209;
+  background-color: ghostwhite;
+  /* background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/memphis-mini.png"); */
   background-image: url("https://www.transparenttextures.com/patterns/light-toast.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   height: 520px;
@@ -13,11 +14,20 @@
   /* margin-bottom: 120px; */
 }
 
+.page-header:hover .profile-name{
+  color: lightcoral;
+}
+
 .profile-pic {
   padding-top: 1.5em;
 }
 
 .profile-name {
   margin-top: -0.5em;
-  color: darkorange;
+  color: rgb(51, 51, 51);
+  /* font-family: Bungee; */
+  font-family: 'Bungee', sans-serif;
 }
+
+
+/* <div class="patternpreview" style="background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/memphis-mini.png')"></div> */

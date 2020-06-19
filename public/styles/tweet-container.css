@@ -8,13 +8,17 @@
 .tweet-container:hover {
   /* box shadow */
   box-shadow: 12px 12px cadetblue;
-  background-color: rgb(240, 237, 231);
+  background-color: rgb(252, 252, 255);
+  /* background-image: url("https://www.transparenttextures.com/patterns/light-toast.png"); */
 }
 
 .tweet-container:hover .handle {
   opacity: 1;
   color: lightcoral;
+}
 
+.tweet-container:hover .fa {
+  opacity: 1;
 }
 
 .tweet-header, .tweet-footer {
@@ -57,7 +61,23 @@ hr {
   padding-right: 12px;
 } */
 
-/* .action-icons {
-  display: flex;
-  justify-content: space-between;
-} */
+.fa {
+  opacity: 0.2;
+}
+
+.fa-flag:hover {
+  opacity: 1;
+  color: lightcoral;
+}
+
+.fa-retweet:hover {
+  opacity: 1;
+  color: lightcoral;
+
+}
+
+.fa-heart:hover {
+  opacity: 1;
+  color: lightcoral;
+
+}

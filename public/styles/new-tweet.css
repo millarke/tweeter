@@ -15,10 +15,14 @@
 }
 
 .new-tweet button {
-  background-color: teal;
-  color: white;
+  background-color: cadetblue;
+  color: ghostwhite;
   border: 0px;
   padding: 4px 8px 4px 8px ;
+}
+
+.new-tweet button:hover {
+  background-color: lightcoral;
 }
 
 #tweet-text {
