@@ -46,7 +46,7 @@ const createTweetElement = function(tweet) {
       </div>
       <span class="handle">${tweet.user.handle}</span>
     </header>
-      <p>${escape(tweet.content.text)}</p>
+      <p class="word-wrap">${escape(tweet.content.text)}</p>
       <hr>
     <footer class="tweet-footer">
       <p>${tweet.created_at}</p>

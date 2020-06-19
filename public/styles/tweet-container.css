@@ -45,6 +45,10 @@ hr {
   border-top: 4px solid #1f2b22
 }
 
+.word-wrap {
+  word-wrap: break-word;
+}
+
 /* .tweet-footer {
   display: flex;
   align-items: center;
