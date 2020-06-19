@@ -91,7 +91,9 @@ $(document).ready(function() {
 
       // window.alert("Tweet too long! It's a tweet not a tweeeeet!");
     } else if (textLength <= 0 || textLength === null) {
-      window.alert("You need a tweet first before you can tweet something!");
+      $('.error').text("You need a tweet first before you can tweet something!").slideDown(1000);
+
+      // window.alert("You need a tweet first before you can tweet something!");
     } else {
       $.post('/tweets', $('.new-tweet-form').serialize())
         .then(function(response) {
